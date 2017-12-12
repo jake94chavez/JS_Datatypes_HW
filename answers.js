@@ -12,7 +12,8 @@
 
 const rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
 
-rainbow[4] //would access blue
+rainbow[4] 
+// Blue
 
 const jake = {
 	favFood: "Spaghetti and Meatballs",
@@ -21,7 +22,8 @@ const jake = {
 	favDataType: "Objects",
 }
 
-jake.hobby; //would access my hobby
+jake.hobby;
+// => Watching television
 
 // Crazy Object!
 
@@ -52,10 +54,15 @@ const crazyObject = {
 }
 
 console.log(crazyObject.taco[1].salsa[5]);
+// => omg my mouth is burning
 console.log(crazyObject.larry.quotes[0]);
+// => Pretty pretty prettayyyyy good
 console.log(crazyObject.larry.characters[2].favourtieHobby);
+// => Swearing at Larry and Jeff
 console.log(crazyObject.larry.nicknames[1]);
+// => Chicken Teriyaki Boyyyyyy
 console.log(crazyObject.larry.characters[1]);
+// => {name: 'funkhauser', occupation: 'tv dude'}
 
 // Object-ception
 
@@ -113,6 +120,30 @@ for (i = 0; i < bondFilms.length; i++) {
 }
 
 console.log(bondTitles);
+/* => [ 'Skyfall',
+  'Thunderball',
+  'Goldfinger',
+  'Live and Let Die',
+  'You Only Live Twice',
+  'The Spy Who Loved Me',
+  'Casino Royale',
+  'Moonraker',
+  'Diamonds Are Forever',
+  'Quantum of Solace',
+  'From Russia with Love',
+  'Die Another Day',
+  'Goldeneye',
+  'On Her Majesty\'s Secret Service',
+  'The World is Not Enough',
+  'For Your Eyes Only',
+  'Tomorrow Never Dies',
+  'The Man with the Golden Gun',
+  'Dr. No',
+  'Octopussy',
+  'The Living Daylights',
+  'A View to a Kill',
+  'License to Kill' ]
+*/
 
 const oddBonds = [];
 for (i = 0; i < bondFilms.length; i++) {
@@ -120,6 +151,73 @@ for (i = 0; i < bondFilms.length; i++) {
 		oddBonds.push(bondFilms[i]);
 	}
 }
+
+console.log(oddBonds);
+/* => [ { title: 'Thunderball',
+    year: 1965,
+    actor: 'Sean Connery',
+    gross: '$1,014,941,117' },
+  { title: 'Live and Let Die',
+    year: 1973,
+    actor: 'Roger Moore',
+    gross: '$825,110,761' },
+  { title: 'You Only Live Twice',
+    year: 1967,
+    actor: 'Sean Connery',
+    gross: '$756,544,419' },
+  { title: 'The Spy Who Loved Me',
+    year: 1977,
+    actor: 'Roger Moore',
+    gross: '$692,713,752' },
+  { title: 'Moonraker',
+    year: 1979,
+    actor: 'Roger Moore',
+    gross: '$655,872,400' },
+  { title: 'Diamonds Are Forever',
+    year: 1971,
+    actor: 'Sean Connery',
+    gross: '$648,514,469' },
+  { title: 'From Russia with Love',
+    year: 1963,
+    actor: 'Sean Connery',
+    gross: '$576,277,964' },
+  { title: 'Goldeneye',
+    year: 1995,
+    actor: 'Pierce Brosnan',
+    gross: '$529,548,711' },
+  { title: 'On Her Majesty\'s Secret Service',
+    year: 1969,
+    actor: 'George Lazenby',
+    gross: '$505,899,782' },
+  { title: 'The World is Not Enough',
+    year: 1999,
+    actor: 'Pierce Brosnan',
+    gross: '$491,617,153' },
+  { title: 'For Your Eyes Only',
+    year: 1981,
+    actor: 'Roger Moore',
+    gross: '$486,468,881' },
+  { title: 'Tomorrow Never Dies',
+    year: 1997,
+    actor: 'Pierce Brosnan',
+    gross: '$478,946,402' },
+  { title: 'Octopussy',
+    year: 1983,
+    actor: 'Roger Moore',
+    gross: '$426,244,352' },
+  { title: 'The Living Daylights',
+    year: 1987,
+    actor: 'Timothy Dalton',
+    gross: '$381,088,866' },
+  { title: 'A View to a Kill',
+    year: 1985,
+    actor: 'Roger Moore',
+    gross: '$321,172,633' },
+  { title: 'License to Kill',
+    year: 1989,
+    actor: 'Timothy Dalton',
+    gross: '$285,157,191' } ]
+*/
 
 let totalGross = 0;
 for (i = 0; i < bondFilms.length; i++) {
