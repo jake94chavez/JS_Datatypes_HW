@@ -123,13 +123,12 @@ for (i = 0; i < bondFilms.length; i++) {
 
 let totalGross = 0;
 for (i = 0; i < bondFilms.length; i++) {
-	bondFilms[i].gross.replace(/\$|,/g, '');
-	Number(bondFilms[i].gross);
+	bondFilms[i].gross = Number(bondFilms[i].gross.replace(/\$|\,/g, ''));
 	totalGross += bondFilms[i].gross;
 }
 
 console.log(totalGross);
-
+// => 13821621224
 
 
 
